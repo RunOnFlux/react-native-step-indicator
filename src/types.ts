@@ -6,6 +6,17 @@
 import React from 'react';
 
 export interface StepIndicatorStyles {
+
+   /**
+   * radius of step indicator 
+   *
+   * @default 10
+   * @type {number}
+   * @memberof StepIndicatorStyles
+   */
+  borderRadiusSize?:number;
+
+
   /**
    * Size of step indicator circle
    *
