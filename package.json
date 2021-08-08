@@ -37,13 +37,13 @@
     "scrollview",
     "listview"
   ],
-  "repository": "https://github.com/24ark/react-native-step-indicator",
-  "author": "Arkit Vora <arkitvora123@gmail.com> (https://github.com/24ark)",
+  "repository": "https://github.com/akash-gupt/react-native-step-indicator",
+  "author": "Akash Gupta <arkitvora123@gmail.com> (https://github.com/akash-gupt)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/24ark/react-native-step-indicator/issues"
+    "url": "https://github.com/akash-gupt/react-native-step-indicator/issues"
   },
-  "homepage": "https://github.com/24ark/react-native-step-indicator#readme",
+  "homepage": "https://github.com/akash-gupt/react-native-step-indicator#readme",
   "devDependencies": {
     "@commitlint/config-conventional": "^8.3.4",
     "@react-native-community/bob": "^0.14.5",

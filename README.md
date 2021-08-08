@@ -10,7 +10,7 @@ Features
   - Supports animation between steps
 
 
-![alt tag](https://raw.githubusercontent.com/24ark/react-native-step-indicator/master/art/HorizontalStepIndicator.gif) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![alt tag](https://raw.githubusercontent.com/24ark/react-native-step-indicator/master/art/VerticalStepIndicator.gif)
+![alt tag](https://raw.githubusercontent.com/akash-gupt/react-native-step-indicator/master/art/HorizontalStepIndicator.gif) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![alt tag](https://raw.githubusercontent.com/akash-gupt/react-native-step-indicator/master/art/VerticalStepIndicator.gif)
  [example/src/HorizontalStepIndicator.tsx](example/src/HorizontalStepIndicator.tsx)   &nbsp;&nbsp;&nbsp;&nbsp; [example/src/VerticalStepIndicator.tsx](example/src/VerticalStepIndicator.tsx)
 
 ### Example
@@ -21,15 +21,15 @@ $ yarn example android   // For Android
 ```
 
 ### Installation
-``npm install react-native-step-indicator --save``
+``npm install react-native-step-indicator-v2 --save``
 
 or
 
-``yarn add react-native-step-indicator``
+``yarn add react-native-step-indicator-v2``
 
 ### Usage
 ```javascript
-import StepIndicator from 'react-native-step-indicator';
+import StepIndicator from 'react-native-step-indicator-v2';
 
 const labels = ["Cart","Delivery Address","Order Summary","Payment Method","Track"];
 const customStyles = {
@@ -131,4 +131,4 @@ If you'd like to see something added or changed to this module please open a new
 
 ### License
 
- - [Apache-2.0](https://github.com/24ark/react-native-step-indicator/blob/master/LICENSE).  © Arkit Vora
+ - [Apache-2.0](https://github.com/akash-gupt/react-native-step-indicator/blob/master/LICENSE).  © Akash Gupta
