@@ -49,6 +49,7 @@ interface DefaultStepIndicatorStyles {
     | undefined;
   currentStepLabelColor: string;
   labelFontFamily?: string;
+  borderRadiusSize:number;
 }
 
 const defaultStyles: DefaultStepIndicatorStyles = {
@@ -76,6 +77,7 @@ const defaultStyles: DefaultStepIndicatorStyles = {
   labelSize: 13,
   labelAlign: 'center',
   currentStepLabelColor: '#4aae4f',
+  borderRadiusSize:10
 };
 
 const StepIndicator = ({
@@ -106,7 +108,7 @@ const StepIndicator = ({
     new Animated.Value(customStyles.stepIndicatorSize)
   ).current;
   const borderRadiusAnim = React.useRef(
-    new Animated.Value(customStyles.stepIndicatorSize / 2)
+    new Animated.Value(customStyles.borderRadiusSize)
   ).current;
 
   const stepPressed = (position: number) => {
@@ -331,7 +333,7 @@ const StepIndicator = ({
           borderColor: customStyles.stepStrokeFinishedColor,
           height: staleSizeAnim,
           width: staleSizeAnim,
-          borderRadius: customStyles.stepIndicatorSize / 2,
+          borderRadius:customStyles.borderRadiusSize,
           overflow: 'hidden',
         };
         indicatorLabelStyle = {
@@ -349,7 +351,7 @@ const StepIndicator = ({
           borderColor: customStyles.stepStrokeUnFinishedColor,
           height: staleSizeAnim,
           width: staleSizeAnim,
-          borderRadius: customStyles.stepIndicatorSize / 2,
+          borderRadius: customStyles.borderRadiusSize,
           overflow: 'hidden',
         };
         indicatorLabelStyle = {
@@ -393,7 +395,7 @@ const StepIndicator = ({
     const animateToPosition = (progressBarSize / (stepCount - 1)) * position;
     sizeAnim.setValue(customStyles.stepIndicatorSize);
     staleSizeAnim.setValue(customStyles.stepIndicatorSize);
-    borderRadiusAnim.setValue(customStyles.stepIndicatorSize / 2);
+    borderRadiusAnim.setValue(customStyles.borderRadiusSize);
     Animated.sequence([
       Animated.timing(progressAnim, {
         toValue: isNaN(animateToPosition) ? 0 : animateToPosition,
@@ -407,7 +409,7 @@ const StepIndicator = ({
           useNativeDriver: false,
         }),
         Animated.timing(borderRadiusAnim, {
-          toValue: customStyles.currentStepIndicatorSize / 2,
+          toValue: customStyles.borderRadiusSize,
           duration: 100,
           useNativeDriver: false,
         }),

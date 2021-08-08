@@ -53,7 +53,8 @@ const customStyles = {
   stepIndicatorLabelUnFinishedColor: '#aaaaaa',
   labelColor: '#999999',
   labelSize: 13,
-  currentStepLabelColor: '#fe7013'
+  currentStepLabelColor: '#fe7013',
+  borderRadiusSize: 10
 }
 
 
@@ -121,6 +122,7 @@ onPageChange(position){
 | ```labelSize``` | Number  | 13
 | ```labelAlign``` | String  | 'center'
 | ```labelFontFamily``` | String  |
+| ```borderRadiusSize``` | String | 10
 
 
 ### Contributing
