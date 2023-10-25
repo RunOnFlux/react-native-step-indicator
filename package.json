@@ -1,6 +1,6 @@
 {
-  "name": "react-native-step-indicator-v2",
-  "version": "1.0.3",
+  "name": "react-native-step-indicator-v3",
+  "version": "1.0.4",
   "description": "A simple react-native implementation of a step indicator widget compatible with ViewPager and Flatlist",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -37,13 +37,13 @@
     "scrollview",
     "listview"
   ],
-  "repository": "https://github.com/akash-gupt/react-native-step-indicator",
-  "author": "Akash Gupta <arkitvora123@gmail.com> (https://github.com/akash-gupt)",
+  "repository": "https://github.com/runonflux/react-native-step-indicator",
+  "author": "Akash Gupta <arkitvora123@gmail.com> (https://github.com/runonflux)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/akash-gupt/react-native-step-indicator/issues"
+    "url": "https://github.com/runonflux/react-native-step-indicator/issues"
   },
-  "homepage": "https://github.com/akash-gupt/react-native-step-indicator#readme",
+  "homepage": "https://github.com/runonflux/react-native-step-indicator#readme",
   "devDependencies": {
     "@commitlint/config-conventional": "^8.3.4",
     "@react-native-community/bob": "^0.14.5",

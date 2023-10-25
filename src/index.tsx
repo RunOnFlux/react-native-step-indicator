@@ -48,8 +48,9 @@ interface DefaultStepIndicatorStyles {
     | 'baseline'
     | undefined;
   currentStepLabelColor: string;
+  finishedStepLabelColor: string;
   labelFontFamily?: string;
-  borderRadiusSize:number;
+  borderRadiusSize: number;
 }
 
 const defaultStyles: DefaultStepIndicatorStyles = {
@@ -77,7 +78,8 @@ const defaultStyles: DefaultStepIndicatorStyles = {
   labelSize: 13,
   labelAlign: 'center',
   currentStepLabelColor: '#4aae4f',
-  borderRadiusSize:10
+  finishedStepLabelColor: '#000000',
+  borderRadiusSize: 10
 };
 
 const StepIndicator = ({
@@ -255,7 +257,7 @@ const StepIndicator = ({
       const selectedStepLabelStyle =
         index === currentPosition
           ? { color: customStyles.currentStepLabelColor }
-          : { color: customStyles.labelColor };
+          : index < currentPosition ? { color: customStyles.finishedStepLabelColor } : { color: customStyles.labelColor };
       return (
         <TouchableWithoutFeedback
           style={styles.stepLabelItem}

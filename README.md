@@ -10,7 +10,7 @@ Features
   - Supports animation between steps
 
 
-![alt tag](https://raw.githubusercontent.com/akash-gupt/react-native-step-indicator/master/art/HorizontalStepIndicator.gif) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![alt tag](https://raw.githubusercontent.com/akash-gupt/react-native-step-indicator/master/art/VerticalStepIndicator.gif)
+![alt tag](https://raw.githubusercontent.com/runonflux/react-native-step-indicator/master/art/HorizontalStepIndicator.gif) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![alt tag](https://raw.githubusercontent.com/runonflux/react-native-step-indicator/master/art/VerticalStepIndicator.gif)
  [example/src/HorizontalStepIndicator.tsx](example/src/HorizontalStepIndicator.tsx)   &nbsp;&nbsp;&nbsp;&nbsp; [example/src/VerticalStepIndicator.tsx](example/src/VerticalStepIndicator.tsx)
 
 ### Example
@@ -21,15 +21,15 @@ $ yarn example android   // For Android
 ```
 
 ### Installation
-``npm install react-native-step-indicator-v2 --save``
+``npm install react-native-step-indicator-v3 --save``
 
 or
 
-``yarn add react-native-step-indicator-v2``
+``yarn add react-native-step-indicator-v3``
 
 ### Usage
 ```javascript
-import StepIndicator from 'react-native-step-indicator-v2';
+import StepIndicator from 'react-native-step-indicator-v3';
 
 const labels = ["Cart","Delivery Address","Order Summary","Payment Method","Track"];
 const customStyles = {
@@ -55,6 +55,7 @@ const customStyles = {
   labelSize: 13,
   currentStepLabelColor: '#fe7013',
   borderRadiusSize: 10
+  finishedStepLabelColor: '#999999',
 }
 
 
@@ -123,6 +124,7 @@ onPageChange(position){
 | ```labelAlign``` | String  | 'center'
 | ```labelFontFamily``` | String  |
 | ```borderRadiusSize``` | String | 10
+| ```finishedStepLabelColor``` | String  | '#000000'
 
 
 ### Contributing
@@ -131,4 +133,4 @@ If you'd like to see something added or changed to this module please open a new
 
 ### License
 
- - [Apache-2.0](https://github.com/akash-gupt/react-native-step-indicator/blob/master/LICENSE).  © Akash Gupta
+ - [Apache-2.0](https://github.com/runonflux/react-native-step-indicator/blob/master/LICENSE).  © RunOnFlux
