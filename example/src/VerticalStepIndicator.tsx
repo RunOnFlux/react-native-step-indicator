@@ -26,8 +26,9 @@ const stepIndicatorStyles = {
 
 export default function VerticalStepIndicator() {
   const [currentPage, setCurrentPage] = React.useState<number>(0);
-  const viewabilityConfig = React.useRef({ itemVisiblePercentThreshold: 40 })
-    .current;
+  const viewabilityConfig = React.useRef({
+    itemVisiblePercentThreshold: 40,
+  }).current;
 
   const renderPage = (rowData: any) => {
     const item = rowData.item;

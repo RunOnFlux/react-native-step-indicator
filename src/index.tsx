@@ -79,7 +79,7 @@ const defaultStyles: DefaultStepIndicatorStyles = {
   labelAlign: 'center',
   currentStepLabelColor: '#4aae4f',
   finishedStepLabelColor: '#000000',
-  borderRadiusSize: 10
+  borderRadiusSize: 10,
 };
 
 const StepIndicator = ({
@@ -95,12 +95,11 @@ const StepIndicator = ({
   const [width, setWidth] = React.useState<number>(0);
   const [height, setHeight] = React.useState<number>(0);
   const [progressBarSize, setProgressBarSize] = React.useState<number>(0);
-  const [customStyles, setCustomStyles] = React.useState<
-    DefaultStepIndicatorStyles
-  >({
-    ...defaultStyles,
-    ...customStylesFromProps,
-  });
+  const [customStyles, setCustomStyles] =
+    React.useState<DefaultStepIndicatorStyles>({
+      ...defaultStyles,
+      ...customStylesFromProps,
+    });
 
   const progressAnim = React.useRef(new Animated.Value(0)).current;
   const sizeAnim = React.useRef(
@@ -257,7 +256,9 @@ const StepIndicator = ({
       const selectedStepLabelStyle =
         index === currentPosition
           ? { color: customStyles.currentStepLabelColor }
-          : index < currentPosition ? { color: customStyles.finishedStepLabelColor } : { color: customStyles.labelColor };
+          : index < currentPosition
+          ? { color: customStyles.finishedStepLabelColor }
+          : { color: customStyles.labelColor };
       return (
         <TouchableWithoutFeedback
           style={styles.stepLabelItem}
@@ -335,7 +336,7 @@ const StepIndicator = ({
           borderColor: customStyles.stepStrokeFinishedColor,
           height: staleSizeAnim,
           width: staleSizeAnim,
-          borderRadius:customStyles.borderRadiusSize,
+          borderRadius: customStyles.borderRadiusSize,
           overflow: 'hidden',
         };
         indicatorLabelStyle = {

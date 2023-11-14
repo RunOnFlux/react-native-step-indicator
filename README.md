@@ -21,15 +21,15 @@ $ yarn example android   // For Android
 ```
 
 ### Installation
-``npm install react-native-step-indicator-v3 --save``
+``npm install @runonflux/react-native-step-indicator --save``
 
 or
 
-``yarn add react-native-step-indicator-v3``
+``yarn add @runonflux/react-native-step-indicator``
 
 ### Usage
 ```javascript
-import StepIndicator from 'react-native-step-indicator-v3';
+import StepIndicator from '@runonflux/react-native-step-indicator';
 
 const labels = ["Cart","Delivery Address","Order Summary","Payment Method","Track"];
 const customStyles = {
