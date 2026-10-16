@@ -37,7 +37,7 @@
     "scrollview",
     "listview"
   ],
-  "repository": "https://github.com/runonflux/react-native-step-indicator",
+  "repository": "https://github.com/RunOnFlux/react-native-step-indicator",
   "author": "RunOnFlux.io (https://github.com/runonflux)",
   "license": "MIT",
   "bugs": {
